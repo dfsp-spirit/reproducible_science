@@ -19,11 +19,6 @@ Git can help you to solve to the following problems:
 * You are working on a script over time, and you want colleagues to be able to access the latest version (without sending emails to them after every change)
 * You want colleagues or others to be able to see your code, and maybe even allow them to directly make or suggest changes (which you can accept or refuse)
 
-Git is **not**:
-* An online document editor that allows several people to collaborate live on the same Word/Excel/whatever document
-* A backup solution
-* A direct replacement for file hosting or sharing services like DropBox
-
 
 Alternatives to Git include [Mercurial](https://www.mercurial-scm.org/), [Darcs](http://darcs.net/), and [Apache Subversion](https://subversion.apache.org/).
 
@@ -112,6 +107,11 @@ Most offer repos for free if you are working alone or in a small team, but for s
 * The official [git documentation website](https://git-scm.com/doc): great documentation, tutorials, videos, ...
 * the [slides used for the course, from courses.cs.washington.edu](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf)
   * License and credits for the linked presentation: *Portions of the CSE403 web may be reprinted or adapted for academic nonprofit purposes, providing the source is accurately quoted and duly creditied. The CSE403 Web: © 1993-2019, Department of Computer Science and Engineering, Univerity of Washington*
+
+## Git workflows for science
+
+* For data analysis: work in a private repository, create a new public repo with assorted files (and without the history) and publish it once the paper is published
+* Use one repo per group to share instructions / knowledge and scripts
 
 
 ## Getting the latest version of this document
