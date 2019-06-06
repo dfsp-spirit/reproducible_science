@@ -22,7 +22,7 @@ Git can help you to solve to the following problems:
 
 Alternatives to Git include [Mercurial](https://www.mercurial-scm.org/), [Darcs](http://darcs.net/), and [Apache Subversion](https://subversion.apache.org/).
 
-## Important Git Terms
+## Important Git Terms (and commands)
 
 For local use:
 
@@ -36,6 +36,7 @@ When using remote repos:
 * clone: the act of creating a copy of a repo
 * merge: combining different versions of files. 
 * conflict: occurs when two incompatible versions of a file need to be merged. Note: Git can auto-merge non-conflicting changes, and will detect conflicting changes and ask the user to fix them.
+* pull: refresh your local repo by merging in changes from its origin
 * push: the act of merging the changes in your local repo back into its origin
 
 ## Presentation
