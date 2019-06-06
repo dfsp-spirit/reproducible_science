@@ -22,7 +22,7 @@ Note that *others* may include yourself, 2 months later. ;)
 
 ## Tools we will get to know:
 
-* The version control system [Git](./git_intro/git_into.md)
+* The version control system [Git](./git_intro/git_intro.md)
 * Two R packages that help with reproducible research:
   * [apaTables](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/apaTables_intro/r_apaTables_intro.html)
   * [rmarkdown](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/rmarkdown_intro/rmarkdown_intro.html)
