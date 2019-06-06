@@ -22,20 +22,23 @@ Git can help you to solve to the following problems:
 
 Alternatives to Git include [Mercurial](https://www.mercurial-scm.org/), [Darcs](http://darcs.net/), and [Apache Subversion](https://subversion.apache.org/).
 
-## Some general tips
+## Important Git Terms
 
-Things you should do:
-* Separate data and code
-* Commit often (several times per day, after every major change). It does not hurt and it ensures you always have the latest version available, should you need to continue working on another machine.
-* write scripts in a machine-independent way
+For local use:
 
-Things you should **not** do:
-* Store credentials (passwords) in any Git repository
-* Store copyrighted material you do not own, personal data, or patient data of any kind in a public Git repository
-* Use git as a replacement for backups
-* Check-in large data files
-* Check-in files which can be easily generated from other files in the repo (e.g., you should add the Rmd file, but not the PDF, doc or html files which you can export based on the Rmd file)
+* repository or repo: a git-managed directory containing all files of a project
+* commit: the act of saving changes to a repo. Each commit is given a commit hash: a (more or less) random string that identifies it
+* tag: a name assigned to a commit, so that it is easier to find it in the history (example: "version_used_for_nature_paper")
 
+When using remote repos:
+
+* origin: the original version of a repo (when your repo is a copy of another repo, that other repo is its origin)
+* clone: the act of creating a copy of a repo
+* merge: combining different versions of files. 
+* conflict: occurs when two incompatible versions of a file need to be merged. Note: Git can auto-merge non-conflicting changes, and will detect conflicting changes and ask the user to fix them.
+* push: the act of merging the changes in your local repo back into its origin
+
+## Presentation
 
 ## Let's get started
 
@@ -95,6 +98,21 @@ It's time to make a change. Edit the file using a text editor and add a line, e.
 ## Alternatives to the command line
 
 There are many [graphical user interfaces for git](https://git-scm.com/downloads/guis), and many advanced text editors (like [Atom](https://atom.io/)) and all major integrated development environments (IDEs, like rstudio, netbeans, pycharm, VSCode,...) have support for git.
+
+## Some general tips
+
+Things you should do:
+* Separate data and code
+* Commit often (several times per day, after every major change). It does not hurt and it ensures you always have the latest version available, should you need to continue working on another machine.
+* write scripts in a machine-independent way
+
+Things you should **not** do:
+* Store credentials (passwords) in any Git repository
+* Store copyrighted material you do not own, personal data, or patient data of any kind in a public Git repository
+* Use git as a replacement for backups
+* Check-in large data files
+* Check-in files which can be easily generated from other files in the repo (e.g., you should add the Rmd file, but not the PDF, doc or html files which you can export based on the Rmd file)
+
 
 ## Getting a server
 
