@@ -5,7 +5,7 @@ A very short introduction.
 ## Reproducible science
 
 
-**Reproducibility** is "the ability to recompute data analytic results given an observed dataset and knowledge of the data analysis pipeline" (Leek & Peng 2015)
+**Reproducibility** is "the ability to recompute data analytic results given an observed dataset and knowledge of the data analysis pipeline" ([Leek & Peng 2015](https://www.pnas.org/content/112/6/1645.short))
 
 
 ## How can we get there?
