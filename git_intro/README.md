@@ -83,7 +83,17 @@ It's time to make a change. Edit the file using a text editor and add a line, e.
     git commit -m "Add basic info to readme file"
     git status
    
- We now have a second version of the file in the repo.
+ We now have a second version of the file in the repo. Let's view the commit history:
+ 
+     git log --oneline
+     
+ Note the commit hashes which are displayed. Let us jump back to an earlier version of the repo, identified by a commit hash:
+ 
+     git checkout <hash>
+     
+ And return to the latest version again:
+ 
+    git checkout master
 
 ## Materials
 
