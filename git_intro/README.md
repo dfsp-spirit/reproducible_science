@@ -78,10 +78,10 @@ Now let us create a file named *README.md* in the repo and add it. You can use a
     
 It's time to make a change. Edit the file using a text editor and add a line, e.g., "# My public R project". Make sure to save the file. Now let us add the changed file.
 
-   git status
-   git add README.md
-   git commit -m "Add basic info to readme file"
-   git status
+    git status
+    git add README.md
+    git commit -m "Add basic info to readme file"
+    git status
    
  We now have a second version of the file in the repo.
 
