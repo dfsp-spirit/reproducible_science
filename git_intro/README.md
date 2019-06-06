@@ -25,6 +25,20 @@ Git is **not**:
 
 Alternatives to Git include [Mercurial](https://www.mercurial-scm.org/), [Darcs](http://darcs.net/), and [Apache Subversion](https://subversion.apache.org/).
 
+## Some general tips
+
+Things you should do:
+* Separate data and code
+* Commit often (several times per day, after every major change). It does not hurt and it ensures you always have the latest version available, should you need to continue working on another machine.
+* write scripts in a machine-independent way
+
+Things you should **not** do:
+* Store credentials (passwords) in any Git repository
+* Store copyrighted material you do not own, personal data, or patient data of any kind in a public Git repository
+* Use git as a replacement for backups
+* Check-in large data files
+* Check-in files which can be easily generated from other files in the repo (e.g., you should add the Rmd file, but not the PDF, doc or html files which you can export based on the Rmd file)
+
 
 ## Let's get started
 
