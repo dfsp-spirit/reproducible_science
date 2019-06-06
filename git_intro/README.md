@@ -70,17 +70,23 @@ Let's create a new repository:
     cd myrepo
     git init
 
-Now let us create a file. You can use a text editor to create a file, or just use the command line:
+Now let us create a file named *README.md* in the repo and add it. You can use a text editor to create a file, or just use the command line:
 
     touch README.md
     git add README.md
     git commit -m "Add empty readme file"
     
+It's time to make a change. Edit the file using a text editor and add a line, e.g., "# My public R project". Make sure to save the file. Now let us add the changed file.
 
-Congratulations, you have created your first local repo.
+   git status
+   git add README.md
+   git commit -m "Add basic info to readme file"
+   git status
+   
+ We now have a second version of the file in the repo.
 
 ## Materials
 
 [the Presentation used for the course, from courses.cs.washington.edu](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf)
 
-License and credits for the linked presentation: Portions of the CSE403 web may be reprinted or adapted for academic nonprofit purposes, providing the source is accurately quoted and duly creditied. The CSE403 Web: © 1993-2019, Department of Computer Science and Engineering, Univerity of Washington
+License and credits for the linked presentation: *Portions of the CSE403 web may be reprinted or adapted for academic nonprofit purposes, providing the source is accurately quoted and duly creditied. The CSE403 Web: © 1993-2019, Department of Computer Science and Engineering, Univerity of Washington*
