@@ -2,11 +2,11 @@
 
 ## What is Git?
 
-Git is a *version control system*, i.e., a software that allows you to manage different versions of files in a repository.
+[Git](https://git-scm.com/) is a *version control system*, i.e., a software that allows you to manage different versions of files in a repository.
 
 Git can be used to:
-* save and access different versions of single files or a whole project
-* work on the same set of (text) files with several people and solve the resulting conflicts (*cf* software development)
+* manage and access different versions of files
+* work on the same set of (text) files with several (or *a lot* of) people and solve the resulting conflicts that may occur (*cf* software development)
 * do many complex things which are specific to software development that we do not care about today
 
 In science, git provides solutions to the following problems:
@@ -27,3 +27,21 @@ Alternatives to Git include [Mercurial](https://www.mercurial-scm.org/), [Darcs]
 
 
 ## Let's get started
+
+First make sure you have [downloaded](https://git-scm.com/) and installed git.
+
+* Start a command line:
+  * Windows: press *Windows+X* to open the Power Users menu, and then click *Command Prompt*
+  * MacOS: in *Finder*, click *Applications* / *Terminal*
+  * Linux: in the Start Menu, click *System Tools* / *xterm*
+
+Now type `git --versions`. You should see version information for git. If you get an error like `Command not found` instead, you either have not installed git or have not yet added it to your PATH environment variable. You will need to fix this before proceeding.
+
+
+
+
+## Materials
+
+[the Presentation used for the course, from courses.cs.washington.edu](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf)
+
+License and credits for the linked presentation: Portions of the CSE403 web may be reprinted or adapted for academic nonprofit purposes, providing the source is accurately quoted and duly creditied. The CSE403 Web: © 1993-2019, Department of Computer Science and Engineering, Univerity of Washington
