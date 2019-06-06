@@ -12,11 +12,13 @@ A very short introduction.
 
 Quoting (Leek & Peng 2015):
 
-* the raw data from the experiment are available
-* the statistical code and documentation to reproduce the analysis are available
-* correct data analysis must be performed
+* "the raw data from the experiment are available"
+* "the statistical code and documentation to reproduce the analysis are available"
+* "correct data analysis must be performed"
 
-Today, we will focus on the second point and explore tools which can help us to allow others to understand and reproduce the data analysis. Note that *others* may include yourself, 2 months later. ;)
+Today, we will focus on the second point and explore tools which can help others to understand and reproduce your data analysis.
+
+Note that *others* may include yourself, 2 months later. ;)
 
 ## Tools we will get to know:
 
