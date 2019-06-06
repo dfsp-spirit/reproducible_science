@@ -42,17 +42,42 @@ Things you should **not** do:
 
 ## Let's get started
 
-First make sure you have [downloaded](https://git-scm.com/) and installed git.
+### Ensure your git installation works
+
+First make sure you have [downloaded](https://git-scm.com/) and installed git. Just answer all questions with the default setting.
 
 * Start a command line:
-  * Windows: press *Windows+X* to open the Power Users menu, and then click *Command Prompt*
+  * Windows: start *Programs* / *Git* / *Git Bash*
   * MacOS: in *Finder*, click *Applications* / *Terminal*
   * Linux: in the Start Menu, click *System Tools* / *xterm*
 
-Now type `git --versions`. You should see version information for git. If you get an error like `Command not found` instead, you either have not installed git or have not yet added it to your PATH environment variable. You will need to fix this before proceeding.
+Now type `git --version`. You should see version information for git. If you get an error like `Command not found` instead, you either have not installed git or have not yet added it to your PATH environment variable. You will need to fix this before proceeding.
 
+### Perform first-time setup
 
+Note that these are **not** credentials for some remote server, they are just something to identify you when you add something to a repo. You can put whatever you want.
 
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
+    
+
+### Create your first repo and add a file
+
+Let's create a new repository:
+
+    pwd
+    mkdir myrepo
+    cd myrepo
+    git init
+
+Now let us create a file. You can use a text editor to create a file, or just use the command line:
+
+    touch README.md
+    git add README.md
+    git commit -m "Add empty readme file"
+    
+
+Congratulations, you have created your first local repo.
 
 ## Materials
 
