@@ -24,5 +24,5 @@ Note that *others* may include yourself, 2 months later. ;)
 
 * The version control system [Git](./git_intro)
 * Two R packages that help with reproducible research:
-  * [rmarkdown](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/apaTables_intro/r_apaTables_intro.html)
   * [apaTables](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/apaTables_intro/r_apaTables_intro.html)
+  * [rmarkdown](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/rmarkdown_intro/rmarkdown_intro.html)
