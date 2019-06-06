@@ -99,13 +99,16 @@ It's time to make a change. Edit the file using a text editor and add a line, e.
 
 ## Alternatives to the command line
 
-There are many graphical user interfaces for git, and many advanced text editors and integrated development environments (IDEs, like rstudio) have support for git.
+There are many [graphical user interfaces for git](https://git-scm.com/downloads/guis), and many advanced text editors (like [Atom](https://atom.io/)) and all major integrated development environments (IDEs, like rstudio, netbeans, pycharm, VSCode,...) have support for git.
+
+## Getting a server
 
 There are hosting platforms like github.com, gitlab.com or bitbucket.com which provide git hosting combined with a convenient web interface to browse files and revisions as well as other tools (e.g., project management or bug tracking software).
 
+Most offer repos for free if you are working alone or in a small team, but for some free repos cannot be private.
 
-## Materials
+## More info on git
 
-[the Presentation used for the course, from courses.cs.washington.edu](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf)
-
-License and credits for the linked presentation: *Portions of the CSE403 web may be reprinted or adapted for academic nonprofit purposes, providing the source is accurately quoted and duly creditied. The CSE403 Web: © 1993-2019, Department of Computer Science and Engineering, Univerity of Washington*
+* The official [git documentation website](https://git-scm.com/doc): great documentation, tutorials, videos, ...
+* the [slides used for the course, from courses.cs.washington.edu](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf)
+  * License and credits for the linked presentation: *Portions of the CSE403 web may be reprinted or adapted for academic nonprofit purposes, providing the source is accurately quoted and duly creditied. The CSE403 Web: © 1993-2019, Department of Computer Science and Engineering, Univerity of Washington*
