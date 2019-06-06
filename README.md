@@ -36,5 +36,5 @@ You can get the latest version via git:
 
 If you already have a copy of the repo, just refresh it from time to time:
 
-   cd reproducible_science/
-   git pull
+    cd reproducible_science/
+    git pull
