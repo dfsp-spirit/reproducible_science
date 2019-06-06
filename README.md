@@ -18,7 +18,7 @@ Today, we will focus on the second point and explore tools which can help us to 
 
 ## Tools we will get to know:
 
-* Git - a version control system (VCS). This allows one to access different versions of files, find the old version of a script you used when you published Paper XY, etc.
+* The version control system [Git](./git_intro)
 * Two R packages that help with reproducible research:
   * [rmarkdown](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/apaTables_intro/r_apaTables_intro.html)
   * [apaTables](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/apaTables_intro/r_apaTables_intro.html)
