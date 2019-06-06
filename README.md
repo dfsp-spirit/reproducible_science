@@ -1,6 +1,7 @@
 # Introduction: towards reproducible science using version control and GNU R
 
-A very short introduction. https://tinyurl.com/repsci
+A very short introduction. 
+https://tinyurl.com/repsci
 
 ## Reproducible science
 
