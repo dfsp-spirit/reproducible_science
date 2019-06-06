@@ -2,7 +2,7 @@
 
 ## What is Git?
 
-[Git](https://git-scm.com/) is a *version control system*, i.e., a software that allows you to manage different versions of files in a repository. 
+[Git](https://git-scm.com/) is a *version control system*, i.e., a software that allows you to manage different versions of files in a repository.
 
 The repository is a directory that is managed by git, and it can be on your computer or on a remote server.
 
@@ -61,7 +61,7 @@ Note that these are **not** credentials for some remote server, they are just so
 
     git config --global user.email "you@example.com"
     git config --global user.name "Your Name"
-    
+
 
 ### Create your first repo and add a file
 
@@ -77,24 +77,24 @@ Now let us create a file named *README.md* in the repo and add it. You can use a
     touch README.md
     git add README.md
     git commit -m "Add empty readme file"
-    
+
 It's time to make a change. Edit the file using a text editor and add a line, e.g., "# My public R project". Make sure to save the file. Now let us add the changed file.
 
     git status
     git add README.md
     git commit -m "Add basic info to readme file"
     git status
-   
+
  We now have a second version of the file in the repo. Let's view the commit history:
- 
+
      git log --oneline
-     
+
  Note the commit hashes which are displayed. Let us jump back to an earlier version of the repo, identified by a commit hash:
- 
+
      git checkout <hash>
-     
+
  And return to the latest version again:
- 
+
     git checkout master
 
 ## Alternatives to the command line
@@ -112,3 +112,15 @@ Most offer repos for free if you are working alone or in a small team, but for s
 * The official [git documentation website](https://git-scm.com/doc): great documentation, tutorials, videos, ...
 * the [slides used for the course, from courses.cs.washington.edu](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf)
   * License and credits for the linked presentation: *Portions of the CSE403 web may be reprinted or adapted for academic nonprofit purposes, providing the source is accurately quoted and duly creditied. The CSE403 Web: © 1993-2019, Department of Computer Science and Engineering, Univerity of Washington*
+
+
+## Getting the latest version of this document
+
+You can get the latest version via git:
+
+    git clone https://github.com/dfsp-spirit/reproducible_science.git
+
+If you already have a copy of the repo, just refresh it from time to time:
+
+    cd reproducible_science/
+    git pull

@@ -26,3 +26,14 @@ Note that *others* may include yourself, 2 months later. ;)
 * Two R packages that help with reproducible research:
   * [apaTables](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/apaTables_intro/r_apaTables_intro.html)
   * [rmarkdown](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/rmarkdown_intro/rmarkdown_intro.html)
+
+## Getting the latest version
+
+You can get the latest version via git:
+
+    git clone https://github.com/dfsp-spirit/reproducible_science.git
+
+If you already have a copy of the repo, just refresh it from time to time:
+
+   cd reproducible_science/
+   git pull
