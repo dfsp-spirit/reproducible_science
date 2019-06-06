@@ -1,5 +1,7 @@
 # Introduction: towards reproducible science using version control and GNU R
 
+A very short introduction.
+
 ## Reproducible science
 
 
