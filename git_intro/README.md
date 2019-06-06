@@ -2,14 +2,16 @@
 
 ## What is Git?
 
-[Git](https://git-scm.com/) is a *version control system*, i.e., a software that allows you to manage different versions of files in a repository.
+[Git](https://git-scm.com/) is a *version control system*, i.e., a software that allows you to manage different versions of files in a repository. 
+
+The repository is a directory that is managed by git, and it can be on your computer or on a remote server.
 
 Git can be used to:
 * manage and access different versions of files
-* work on the same set of (text) files with several (or *a lot* of) people and solve the resulting conflicts that may occur (*cf* software development)
+* work on the same set of (text) files with several (or *a lot* of) people and solve the resulting conflicts that may occur
 * do many complex things which are specific to software development that we do not care about today
 
-In science, git provides solutions to the following problems:
+Git can help you to solve to the following problems:
 * You messed up your R script today when working on it, and you want to get the version from yesterday back.
 * You want to know the settings you used when computing the data for paper XY, but you have changed the script in the meantime.
 * You want to see the changes introduced to a script since last month.
@@ -94,6 +96,13 @@ It's time to make a change. Edit the file using a text editor and add a line, e.
  And return to the latest version again:
  
     git checkout master
+
+## Alternatives to the command line
+
+There are many graphical user interfaces for git, and many advanced text editors and integrated development environments (IDEs, like rstudio) have support for git.
+
+There are hosting platforms like github.com, gitlab.com or bitbucket.com which provide git hosting combined with a convenient web interface to browse files and revisions as well as other tools (e.g., project management or bug tracking software).
+
 
 ## Materials
 
