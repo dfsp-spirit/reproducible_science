@@ -117,9 +117,13 @@ Things you should **not** do:
 
 ## Getting a server
 
-There are hosting platforms like github.com, gitlab.com or bitbucket.com which provide git hosting combined with a convenient web interface to browse files and revisions as well as other tools (e.g., project management or bug tracking software).
+**Important:** Before creating a repository (public or private), you have to make sure that you are allowed to store your data on that server. Typically you are **not** allowed to store patient data or metadata on servers outside of your organization. If you need to version such data, you should talk to your IT department to get an internal git server.
 
-Most offer repos for free if you are working alone or in a small team, but for some free repos cannot be private.
+For data that can be stored on external servers, there are hosting platforms like github.com, gitlab.com or bitbucket.com which provide git hosting combined with a convenient web interface to browse and download files and revisions. These platforms often include other tools as well, e.g., project management and bug tracking software, or a wiki.
+
+Most platforms offer repos for free if you are working alone or in a small team, but for some free repos cannot be private.
+
+
 
 ## More info on git
 
