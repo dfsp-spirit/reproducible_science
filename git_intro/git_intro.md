@@ -34,7 +34,7 @@ When using remote repos:
 
 * origin: the original version of a repo (when your repo is a copy of another repo, that other repo is its origin)
 * clone: the act of creating a copy of a repo
-* merge: combining different versions of files. 
+* merge: combining different versions of files.
 * conflict: occurs when two incompatible versions of a file need to be merged. Note: Git can auto-merge non-conflicting changes, and will detect conflicting changes and ask the user to fix them.
 * pull: refresh your local repo by merging in changes from its origin
 * push: the act of merging the changes in your local repo back into its origin
@@ -103,11 +103,14 @@ There are many [graphical user interfaces for git](https://git-scm.com/downloads
 ## Some general tips
 
 Things you should do:
+
 * Separate data and code
 * Commit often (several times per day, after every major change). It does not hurt and it ensures you always have the latest version available, should you need to continue working on another machine.
-* write scripts in a machine-independent way
+* Write scripts in a machine-independent way
+
 
 Things you should **not** do:
+
 * Store credentials (passwords) in any Git repository
 * Store copyrighted material you do not own, personal data, or patient data of any kind in a public Git repository
 * Use git as a replacement for backups
@@ -119,10 +122,21 @@ Things you should **not** do:
 
 **Important:** Before creating a repository (public or private), you have to make sure that you are allowed to store your data on that server. Typically you are **not** allowed to store patient data or metadata on servers outside of your organization. If you need to version such data, you should talk to your IT department to get an internal git server.
 
-For data that can be stored on external servers, there are hosting platforms like github.com, gitlab.com or bitbucket.com which provide git hosting combined with a convenient web interface to browse and download files and revisions. These platforms often include other tools as well, e.g., project management and bug tracking software, or a wiki.
+For data that can be stored on external servers, there are hosting platforms like [github](https://github.com/), [gitlab](https://gitlab.com/) or [bitbucket](https://bitbucket.org/) which provide git hosting combined with a convenient web interface to browse and download files and revisions. These platforms often include other tools as well, e.g., project management and bug tracking software, or a wiki.
 
-Most platforms offer repos for free if you are working alone or in a small team, but for some free repos cannot be private.
+Most platforms offer repos for free if you are working alone or in a small team. The only service I know of that offers *private* repos for free is [bitbucket](https://bitbucket.org/), but I recommend to check for yourself.
 
+
+### Using a remote server
+
+Once you have a server, you can:
+
+* create a repository on it: There should be a web interface, just login and follow instructions to create a repo. Typically, the new repo will be created at an URL like https://serviceprovider.com/you_username/repo. In many cases, it contains a README file explaining how to use it.
+* clone the repo on your local machine: `git clone https://serviceprovider.com/you_username/repo`
+* Work with the repo as explained above (add files, modify them, commit as often as you want locally)
+* Once you feel like syncing your local repo with the remote repo on the server, push your changes: `git push`. This will ask for your username and password for serviceprovider.com. Once it is done, you should see the changes in the web interface.
+
+Before you start working on another machine, make sure to refresh your local repo from the remote server: `git pull`
 
 
 ## More info on git
