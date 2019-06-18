@@ -30,7 +30,9 @@ Click the links for the course materials.
   * [apaTables](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/apaTables_intro/r_apaTables_intro.html)
   * [rmarkdown](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/rmarkdown_intro/rmarkdown_intro.html)
   
-If you have git installed, you can also checkout this whole repository:
+## Gettings a local copy of this repo
+
+If you already have git installed, you can checkout this whole repository:
   
     git clone https://github.com/dfsp-spirit/reproducible_science
   
