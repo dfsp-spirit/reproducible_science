@@ -23,8 +23,15 @@ Note that *others* may include yourself, 2 months later. ;)
 
 ## Tools we will get to know:
 
+Click the links for the course materials.
+
 * The version control system [Git](./git_intro/git_intro.md)
 * Two R packages that help with reproducible research:
   * [apaTables](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/apaTables_intro/r_apaTables_intro.html)
   * [rmarkdown](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/rmarkdown_intro/rmarkdown_intro.html)
+  
+  If you have git installed, you can also checkout this whole repository:
+  
+      git clone https://github.com/dfsp-spirit/reproducible_science
+  
 
