@@ -124,7 +124,7 @@ Things you should **not** do:
 
 For data that can be stored on external servers, there are hosting platforms like [github](https://github.com/), [gitlab](https://gitlab.com/) or [bitbucket](https://bitbucket.org/) which provide git hosting combined with a convenient web interface to browse and download files and revisions. These platforms often include other tools as well, e.g., project management and bug tracking software, or a wiki.
 
-Most platforms offer repos for free if you are working alone or in a small team. The only service I know of that offers *private* repos for free is [bitbucket](https://bitbucket.org/), but I recommend to check for yourself.
+Most platforms offer repos for free if you are working alone or in a small team. The only services I know of that offer *private* repos for free are [bitbucket](https://bitbucket.org/) and [github](https://github.com/), but I recommend to check for yourself.
 
 
 ### Using a remote server
