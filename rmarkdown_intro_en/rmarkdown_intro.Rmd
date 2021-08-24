@@ -5,50 +5,53 @@ date: "2019-05-28"
 output: html_document
 ---
 
-## Was ist *RMarkdown* und was bringt es mir?
+## What is *RMarkdown* and how can it help me?
 
-Ein RMarkdown (Rmd) Dokument ermöglicht es, wissenschaftliche Berechnungen und deren Ergebnisse und Interpretation gemeinsam zu speichern und professionell zu präsentieren.
+An R Markdown (Rmd) document contains visualizations of statistical results along with the source code used to create them.
 
-Dies ermöglicht:
+This enables:
 
-* Reproduzierbarkeit: Bei geänderten Daten kann die Analyse inklusive Abbildungen einfach reproduziert werden
-* Teilen: Das Ausgabedokument kann verschickt werden, und KollegInnen, die die Daten nicht haben, können dennoch die Methoden nachvollziehen und die Ergebnisplots sehen
+* Dcoumented and reproducible workflow: When the data changes, all you have to do is re-run the file to get the new results and figures.
+* Sharing: One can send the output document to colleagues, who can use it to see the results AND understand the methods.
 
-## Wie funktioniert es?
+(If they want to run the analysis, they also need the data of course, but they do not have to do that.)
 
-Technisch gesehen ist ein Rmd Dokument eine normale Textdatei, die drei Dinge enthält:
+## How does it work?
 
-* Metadaten (im YAML-Format)
-* R-Code (oder Code in anderen Sprachen)
-* Erklärungen in Text-Form
+Technically an Rmd document is a simple text file containing sections. Each section is can be one of the following 3 types:
 
-Die Textdatei ist ein **Quelldokument** und kann durch sogenanntes *knitten* ausgewertet und in das **Ausgabedokument** transformiert werden. Dabei wird z.B. der enthaltene R-Code ausgeführt, Plots werden erstellt und als Bilder gespeichert, die Steuerbefehle im Text (z.B. Formeln wie $F(x) = \int^a_b \frac{1}{3}x^3$ oder Steuerzeichen wie \* für *kursiv* oder \*\* für **fett**) werden interpretiert, und danach wird aus allen erstellten Komponenten das Ausgabedokument erstellt:
+* document metadata (in YAML-Format), like author information and desired output format.
+* R source code (or code in some other supported languages)
+* comments and explanations written in plain text
+
+The Rmd file is a **source document** that needs to be transformed (*knitted*) to produce the **output document**. During the knitting, the contained
+R source code is executed, plots and figures are produced and saved as images, control sequences in the text (e.g., equations like $F(x) = \int^a_b \frac{1}{3}x^3$ or control sequences like \* for *italics* orr \*\* for **bold face**) are interpreted, and everything is embedded into the output document:
 
 
-![**Abbildung 1**: Durch *knitten* vom Quelldokument (Text-Datei im Markdown-Format) zum Ausgabedokument in vielen möglichen Formaten.](doc_to_output.png)
+![**Fig 1**: Knitting a source document to create output documents in different formats.](doc_to_output.png)
 
-## Wie sieht die Quelldatei aus?
+## What does an Rmd file look like?
 
-Wie ein normales R-Skript mit zusätzlichen Blöcken. Schauen wir auf ein Beispiel-Dokument. Es beginnt mit Meta-Daten:
+Like a normal R script, but with additional blocks or sections. Here is an example document starting with a metadata section:
 
     ---
-    title: "R Markdown Einführung"
+    title: "R Markdown Introduction"
     author: "Tim Schäfer"
-    date: "2019-05-28"
+    date: "2021-08-23"
     output: html_document
     ---
 
-    Dann irgendwelcher freier Text zur Erklärung, eventuell *kursiv* oder gar **fett** gesetzt. Dann kann mal R Code folgen.
+This can be followed by some text, maybe *in italics* or **bold**. Then some R code.
 
 
-Zu beachten im freien Text sind besonders die Steuerzeichen (z.B. die \* bei \*kursiv\*). Sie sind der eigentliche Markdown-Code. Eine Liste aller üblichen Steuerzeichen ist im unten verlinken Markdown Cheat Sheet zu finden.
+There are some easy control characters which can be found in the Markdown Cheat Sheet linked below.
 
-**Hinweis**: Soll ein Steuerzeichen ohne seine Sonderfunktion verwendet werden, muss es *escaped* werden. Das Escape-Zeichen ist der Backslash: die Eingabe von \\\* im Markdown-Code führt also zu \* im Ausgabedokument.
+**Note**: To use a control character without its special meaning, one has to escape it. The escape character is backslash, so entering \\\* in your markdown code produces \* in the output document.
 
 
-#### WICHTIG!
+#### IMPORTANT for the following examples
 
-**Um zu sehen, wie man R-Code einfügt, sehen wir uns nun parallel zu diesem Ausgabedokument auch das Quelldokument an. Dazu öffnen wir die Datei `rmarkdown_intro.Rmd` in rstudio oder in einem beliebigen Texteditor[^1], falls nicht bereits geschehen.**
+**To understand how to insert R code, you should now open this Rmd file (`rmarkdown_intro.Rmd`) in rstudio or any text editor[^1].**
 
 
 ## Installation
@@ -56,9 +59,10 @@ Zu beachten im freien Text sind besonders die Steuerzeichen (z.B. die \* bei \*k
     install.packages("rmarkdown")
     
 
-## Starten wir mit einem Beispiel (im Code)
+## An Example
 
-Der folgende Block besteht aus R-Code. Dieser wird beim *Knitten* ausgeführt...
+The following block consists of R code that will be run when we knit the document:
+
 
 ```{r}
 fit = lm(dist ~ speed, data = cars)
@@ -67,15 +71,15 @@ plot(cars)
 abline(fit)
 ```
 
-...und der resultierende Plot wird im Dokument eingebettet. In folgendem Code kann man auf die Variablen natürlich weiterhin zu greifen. Daher kann ich hier verraten:
+The resulting plot will be embedded into the output document. One can re-use the variables in following code sections, of course. Therefore I can tell you here that:
 
-Die Steigung der Regressionsgeraden in der obigen Abbildung beträgt `r b[1]`.
+The slope of the regression line in the plot above is `r b[1]`.
 
 ## Integration in rstudio
 
-RMarkdown ist exzellent in [rstudio](https://rstudio.com/) integriert. So kann man neue Rmd-Dokumente in der grafischen Oberfläche erzeugen, unterschiedliche Code-Blöcke einfügen, und einzelne Blöcke oder das gesamte Dokument knitten und das Ergebnis live ansehen (sogennantes *Notebook-Interface*, vgl. Jupyter-Notebook für Python oder Matlab *Live Scripts*.).
+RMarkdown works especially well with [rstudio](https://rstudio.com/). It is very easy to create Markdown document, add different blocks, knit a single block, several blocks, or the whole document, and view the resulting output (so-called *Notebook-Interface*, similar to Jupyter-Notebook for Python or the Matlab *Live Scripts*.).
 
-Man kann die Rmd-Textdateien aber natürlich auch mit jedem anderen Texteditor erstellen. Auch das *Knitten* ist auf der Kommandozeile möglich:
+Alternatively, it is of course possible to produce the Rmd documents with any text editor. The knitting can also be accomplished on the command line:
 
 `R -e rmarkdown::render"('rmarkdown_intro.Rmd', output_file='markdown_intro.html')"`
 
@@ -103,4 +107,4 @@ Das Ausgabeformat wird in den Metadaten festgelegt, für HTML z.B. sieht das so 
 
 Die Beispiele in diesem Dokument entstammen der offiziellen Hilfe zu RMarkdown. An diese ist auch der Rest des Dokuments angelehnt.
 
-[^1]: Es lohnt sich meiner Meinung nach, nicht den Standardtexteditor des Betriebssystems zu nutzen, sondern lieber einen Editor zu installieren, der Syntax Highlighting kann und mit unterschiedlichen Encodings und Zeilenende-Zeichen klarkommt (z.B. [Atom](https://atom.io/)).
+[^1]: Use a good one with line numbers and syntax highlighting for Markdown, like [Atom](https://atom.io/).
