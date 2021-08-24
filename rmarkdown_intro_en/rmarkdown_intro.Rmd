@@ -84,27 +84,27 @@ Alternatively, it is of course possible to produce the Rmd documents with any te
 `R -e rmarkdown::render"('rmarkdown_intro.Rmd', output_file='markdown_intro.html')"`
 
 
-## Welche Ausgabeformate gibt es?
+## What output formats are available?
 
-Sehr viele, denn unter der Haube wird [Pandoc](https://pandoc.org/) benutzt. Die gebräuchlichsten sind wohl PDF, HTML, und Word. Es gibt aber sehr viele Möglichkeiten, und wenn man sich mehr damit beschäftigt, kann man z.B. Literaturdatenbanken ansprechen, Präsentationsfolien erzeugen lassen, oder ganze Bücher oder wissenschaftliche Artikel über LaTeX setzen lassen.
+A lot, under the hood [Pandoc](https://pandoc.org/) is used to generate output. The most common ones are PDF, HTML, and MS Word. But there are more options, and special packages exist to produce slides for presentations, whole books or scientific journal articles in LaTeX.
 
-Das Ausgabeformat wird in den Metadaten festgelegt, für HTML z.B. sieht das so aus:
+The desired output format is specified in a document metadata block and looks like this:
 
 `output: html_document`
 
-## Grenzen von RMarkdown
+## Limitations of Markdown
 
+* Sometimes you need to pre-process data in other software (like FreeSurfer for neuroimaging data) or convert it before you load it into R. This means that you will have a collection
+of different scripts which need to be run in the correct order. One should document in a central README file what needs to be done, and what input the Markdown document expects.
+* The produced output documents looks pretty decent by default. However, if one wants to further adapt the style of the output documents, it gets rather technical.
 
-* Oft ist eine Vorverarbeitung oder Zwischenschritte mit anderer Software nötig und man hat eine Sammlung von Skripten, die in der richtigen Reihenfolge und evtl. mit manuellen Zwischenschritten ausgeführt werden müssen. Diese Gesamtpipeline sollte daher gut dokumentiert sein, und in den Skripten sollte ersichtlich sein, von welchen Eingabedaten (und eventuell bereits erfolgten Vorverarbeitungsschritten) das Skript ausgeht.
-* Die ausgegebenen Dokumente sehen schon sehr gut aus, aber wenn man sie noch weiter im Stil anpassen möchte (oder muss) sind eventuell erweiterte Kenntnisse nötig und es kann schnell technisch werden.
+## Ressources
 
-## Nützliche Ressourcen
-
-* Die offizielle Hilfe unter [rmarkdown.rstudio.com/](https://rmarkdown.rstudio.com/)
-* [Das R Markdown Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
+* The official documentation at [rmarkdown.rstudio.com/](https://rmarkdown.rstudio.com/)
+* [The R Markdown Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
 
 ### Credits
 
-Die Beispiele in diesem Dokument entstammen der offiziellen Hilfe zu RMarkdown. An diese ist auch der Rest des Dokuments angelehnt.
+The examples used in this document were adapted from the official documentation.
 
 [^1]: Use a good one with line numbers and syntax highlighting for Markdown, like [Atom](https://atom.io/).
