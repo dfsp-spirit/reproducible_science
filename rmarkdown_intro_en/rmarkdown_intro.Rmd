@@ -25,7 +25,7 @@ Technically an Rmd document is a simple text file containing sections. Each sect
 * comments and explanations written in plain text
 
 The Rmd file is a **source document** that needs to be transformed (*knitted*) to produce the **output document**. During the knitting, the contained
-R source code is executed, plots and figures are produced and saved as images, control sequences in the text (e.g., equations like $F(x) = \int^a_b \frac{1}{3}x^3$ or control sequences like \* for *italics* orr \*\* for **bold face**) are interpreted, and everything is embedded into the output document:
+R source code is executed, plots and figures are produced and saved as images, control sequences in the text (e.g., equations like $F(x) = \int^a_b \frac{1}{3}x^3$ or control sequences like \* for *italics* or \*\* for **bold face**) are interpreted, and everything is embedded into the output document:
 
 
 ![**Fig 1**: Knitting a source document to create output documents in different formats.](doc_to_output.png)
