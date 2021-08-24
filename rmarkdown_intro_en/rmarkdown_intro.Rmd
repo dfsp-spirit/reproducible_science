@@ -51,7 +51,7 @@ There are some easy control characters which can be found in the Markdown Cheat 
 
 #### IMPORTANT for the following examples
 
-**To understand how to insert R code, you should now open this Rmd file (`rmarkdown_intro.Rmd`) in rstudio or any text editor[^1].**
+**To understand how to insert R code, you should now open this Rmd file (`rmarkdown_intro.Rmd`) in rstudio or any text editor[^1], or [click here to see the source online](https://github.com/dfsp-spirit/reproducible_science/blob/master/rmarkdown_intro_en/rmarkdown_intro.Rmd).**
 
 
 ## Installation
