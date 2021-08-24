@@ -25,10 +25,10 @@ Note that *others* may include yourself, 2 months later. ;)
 
 Click the links for the course materials.
 
-* The version control system [Git](./git_intro/git_intro.md)
+* The version control system [Git)](./git_intro/git_intro.md)
 * Two R packages that help with reproducible research:
   * [apaTables](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/apaTables_intro/r_apaTables_intro.html)
-  * rmarkdown: [EN](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/rmarkdown_intro_en/rmarkdown_intro.html) [DE](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/rmarkdown_intro/rmarkdown_intro.html)
+  * rmarkdown: [english](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/rmarkdown_intro_en/rmarkdown_intro.html) [german version](http://htmlpreview.github.io/?https://github.com/dfsp-spirit/reproducible_science/blob/master/rmarkdown_intro/rmarkdown_intro.html)
   
 ## Gettings a local copy of this repo
 
