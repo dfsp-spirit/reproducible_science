@@ -48,7 +48,7 @@ Zu beachten im freien Text sind besonders die Steuerzeichen (z.B. die \* bei \*k
 
 #### WICHTIG!
 
-**Um zu sehen, wie man R-Code einfügt, sehen wir uns nun parallel zu diesem Ausgabedokument auch das Quelldokument an. Dazu öffnen wir die Datei `rmarkdown_intro.Rmd` in rstudio oder in einem beliebigen Texteditor[^1], falls nicht bereits geschehen.**
+**Um zu sehen, wie man R-Code einfügt, sehen wir uns nun parallel zu diesem Ausgabedokument auch das Quelldokument an. Dazu öffnen wir die Datei `rmarkdown_intro.Rmd` in rstudio oder in einem beliebigen Texteditor[^1], falls nicht bereits geschehen. Alternativ [hier klicken für eine Online-Ansicht des Codes](https://github.com/dfsp-spirit/reproducible_science/blob/master/rmarkdown_intro/rmarkdown_intro.Rmd).**
 
 
 ## Installation
