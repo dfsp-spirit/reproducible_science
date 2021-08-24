@@ -1,7 +1,7 @@
 ---
-title: "R Markdown Einführung"
+title: "R Markdown Introduction"
 author: "Tim Schäfer"
-date: "2019-05-28"
+date: "2021-08-23"
 output: html_document
 ---
 
@@ -108,3 +108,4 @@ of different scripts which need to be run in the correct order. One should docum
 The examples used in this document were adapted from the official documentation.
 
 [^1]: Use a good one with line numbers and syntax highlighting for Markdown, like [Atom](https://atom.io/).
+´
