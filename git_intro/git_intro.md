@@ -39,9 +39,7 @@ When using remote repos:
 * pull: refresh your local repo by merging in changes from its origin
 * push: the act of merging the changes in your local repo back into its origin
 
-## Presentation
-
-## Let's get started
+## Git by example: your first git project
 
 ### Ensure your git installation works
 
